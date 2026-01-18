@@ -25,16 +25,12 @@ Additionally, two extensions are included to study the efficacy of LSTM:
 
 ## Results
 - **Core Model Performance**: Best model (e.g., LSTM) achieves low MSE on test data. Comparative study shows LSTM outperforming RNN in capturing long-term dependencies, with GRU offering a balance in speed and efficiency.
-![NO2: Predictions vs Actual](images/prediction_NO2.png)
-![O3: Predictions vs Actual](images/prediction_O3.png)
-![PM10: Predictions vs Actual](images/prediction_PM10.png)
-![PM25: Predictions vs Actual](images/prediction_PM25.png)
+![Predictions vs Actual](images/prediction_all.png)
 
 - **Extra Feature 1: Temporal Patterns**: Seasonal decomposition reveals periodic trends, such as higher NO₂ in winter due to traffic and heating, and elevated O₃ in summer from photochemical reactions.
 ![Daily Forecast](images/ex1_forecast.png)
 - **Extra Feature 2: Spatial Clustering**: KMeans identifies 3 clusters (high NO₂ urban/traffic, high O₃ suburban, balanced mixed/industrial). DBSCAN detects outliers like unique industrial stations, highlighting spatial differences in pollution sources (e.g., central city vs. outskirts).
-![KMeans Clusters of Stations](images/ex2_KMeans.png)
-![DBSCAN Clusters of Stations](images/ex2_DBSCAN.png)
+![Clusters of Stations](images/ex2_clusters.png)
 
 ## Acknowledgments
 Dataset: [Kaggle - Air Quality in Madrid](https://www.kaggle.com/datasets/decide-soluciones/air-quality-madrid)
